@@ -9,10 +9,6 @@ client = discord.Client()
 
 sad_words = ["i suck", "sad", "depression", "depressed"]
 
-start_positive_words = [
-  "U good person",
-  "Doge always here"
-]
 
 def get_quote():
   response = requests.get("https://zenquotes.io/api/random")
