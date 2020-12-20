@@ -1,4 +1,5 @@
 from replit import db
+from server import keep_running
 import discord
 import random
 import requests
@@ -84,4 +85,6 @@ async def on_message(message):
     await message.channel.send(
       "!list : list all positive messages\n!delete (index) : delete an message from positive words\n!new (message) : creates a new positive message\n!commands : show this menu"
     )
+
+keep_running()
 client.run(os.getenv('TOKEN'))
