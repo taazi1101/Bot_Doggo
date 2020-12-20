@@ -10,7 +10,6 @@ client = discord.Client()
 
 sad_words = ["i suck", "sad", "depression", "depressed"]
 
-
 def get_quote():
   response = requests.get("https://zenquotes.io/api/random")
   json_data = json.loads(response.text)
